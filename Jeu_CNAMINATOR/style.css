@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "rogfont";
+    src: url('rogfont.TTF');
+    }  
+
+body{
+background-color: rgb(85, 181, 219);
+height: 100vh;
+}
+
+.page1 .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.page1 h1{
+    margin: 0;
+    font-family: "rogfont", sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    color: #e42e36;
+    text-shadow: 
+        1px 1px 1px #414142,
+        1px 2px 1px #414142,
+        1px 3px 1px #414142,
+        1px 4px 1px #414142,
+        1px 5px 1px #414142,
+        1px 6px 1px #414142,
+        1px 7px 1px #000000;
+
+}
+
+.page1 .image{
+    margin-top: 10px;
+}
+
+
+
+.page1 .bouton1{
+    margin-top: 50px;
+}
+
+.page1 .bouton {
+    font-size: 30px;
+    display: flex;
+    height: 100px;
+    width: 200px;
+    text-decoration: none;
+    color: black;
+    background-color: blanchedalmond;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.page1 .bulle1{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 750px;
+}
+
+.page1 .bubble-text{
+
+    background:#ffffff; 
+    color:rgb(0, 0, 0); 
+    padding:2px 10px; 
+    border-radius:3px; 
+    width:300px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.page1 .bubble-text::after{
+    content:""; 
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    border-top: 20px solid #ffffff;
+    position: absolute;
+    
+    }
+
+
+
+
+    
+.page2 .retour{
+    font-family: "rogfont", sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #e42e36;
+    text-shadow: 
+        1px 1px 1px #414142,
+        1px 2px 1px #414142,
+        1px 3px 1px #414142,
+        1px 4px 1px #414142,
+        1px 5px 1px #414142,
+        1px 6px 1px #414142,
+        1px 7px 1px #000000;
+    margin-left: 30px;
+    text-decoration: none;
+}
