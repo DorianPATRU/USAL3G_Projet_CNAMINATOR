@@ -4,8 +4,8 @@
     }
 
 body{
-background-color: rgb(85, 181, 219);
-height: 100vh;
+    background: linear-gradient(rgb(61, 168, 255), rgb(61, 70, 197));
+    height: 100vh;
 }
 
 .page1 .menu{
@@ -45,12 +45,16 @@ height: 100vh;
 .page1 .bouton {
     font-size: 30px;
     display: flex;
-    height: 100px;
+    height: 50px;
     width: 200px;
     text-decoration: none;
-    color: black;
-    background-color: blanchedalmond;
-    border-radius: 10%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-bottom: 3px solid #000000;
+    border-left: 3px solid #000000;
+    border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-radius: 10% / 50%;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -61,26 +65,35 @@ height: 100vh;
     position: absolute;
     margin-top: 150px;
     margin-right: 750px;
+    border-radius: 50%;
 }
 
 .page1 .bubble-text{
 
     background:#ffffff;
     color:rgb(0, 0, 0);
-    padding:2px 10px;
-    border-radius:3px;
+    border-radius: 10% / 50%;
     width:300px;
+    height: 100px;
+    text-align: center;
     font-size: 20px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 
 }
+
+.page1 .bubble-text h2{
+   margin-bottom: 0;
+
+}
+
 .page1 .bubble-text::after{
     content:"";
     border-left:20px solid transparent;
     border-right:20px solid transparent;
     border-top: 20px solid #ffffff;
     position: absolute;
-    margin-left: 230px;
+    margin-left: 40px;
+    margin-top: -20px;
  }
 
 .page1 .bulle2{
@@ -94,7 +107,7 @@ height: 100vh;
     background:#ffffff;
     color:rgb(0, 0, 0);
     padding:2px 10px;
-    border-radius:3px;
+    border-radius: 10% / 50%;
     width:300px;
     font-size: 20px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -106,6 +119,7 @@ height: 100vh;
     border-right:20px solid transparent;
     border-top: 20px solid #ffffff;
     position: absolute;
+    margin-left: 50px;
  }
 
 
@@ -154,33 +168,38 @@ height: 100vh;
 
 
 
- .page2 img{
-     margin-top: 100px;
-     margin-left: 500px;
- }
-
- .page2 .menu{
-    display: flex;
-    flex-direction: column;
+ .page2 .image {
+  display: flex;
+  justify-content: center;
 }
 
-.page2 .bouton1{
-    position: absolute;
-    margin-left: 990px;
-    margin-top: 300px;
+.page2 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 15%;
+  margin-top: -18%;
 }
 
 .page2 .bouton {
-    font-size: 30px;
-    display: flex;
-    height: 100px;
-    width: 200px;
-    text-decoration: none;
-    color: black;
-    background-color: blanchedalmond;
-    border-radius: 10%;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+}
 
+ul li {
+  margin: 1%;
+}
+
+li {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 2%;
+  height: 30px;
+  width: 180px;
+  text-align: center;
 }
