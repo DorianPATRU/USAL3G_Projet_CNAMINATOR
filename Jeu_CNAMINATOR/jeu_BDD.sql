@@ -114,16 +114,25 @@ INSERT INTO speakers
   (speaker_id, speaker_lastname, speaker_firstname, speaker_kind,
   speaker_age, speaker_unit, speaker_hair_color)
 VALUES
-  (0, "MAIGRET", "Benoit", "M", 33, "lecture", "roux"),
-  (0, "DI MASCOLO", "Claudine", "M", 45, "lecture", "roux"),
-  (0, "CHARIH", "Khalil", "M", 33, "lecture", "roux"),
-  (0, "DEVOLDERE", "Mickael", "M", 40, "gaming", "brun"),
-  (0, "EDEBAU", "Marjorie", "M", 40, "gaming", "brun"),
-  (0, "BASTIAN", "Celia", "F", 45, "developpement personnel", "brun"),
-  (0, "GOZE", "Michel", "M", 60, "sciences", "brun"),
-  (0, "SCHOTT", "Jean-Louis", "M", 64, "gagner de l''argent", "blond"),
-  (0, "PINTIAU", "Frederic", "M", 47, "regarder des series", "brun"),
-  (0, "MATERA", "Sandro", "M", 38, "handlettering", "noir"),
-  (0, "TSCHAEN", "Benjamin", "M", 29, "gaming", "chatain"),
-  (0, "WEISS", "Serge", "M", 55, "faire la fete", "brun"),
-  (0, "HELMER", "Jean-Luc", "M", 67, "faire la fete", "brun");
+  (0, "MAIGRET", "Benoit", "M", 33, "html-css algo-javascript", "noir"),
+  (0, "DI MASCOLO", "Claudine", "F", 45, "methodes et outils communication ecrite", "rouge"),
+  (0, "CHARIH", "Khalil", "M", 39, "php-mvc", "brun"),
+  (0, "DEVOLDERE", "Mickael", "M", 40, "base de donnees", "brun"),
+  (0, "EDEBAU", "Marjorie", "F", 45, "coaching personnalise", "brun"),
+  (0, "BASTIAN", "Celia", "F", 45, "coaching personnalise", "blond"),
+  (0, "GOZE", "Michel", "M", 60, "outils mathematiques", "blanc"),
+  (0, "SCHOTT", "Jean-Louis", "M", 64, "demarche de projet", "blanc"),
+  (0, "PINTIAU", "Frederic", "M", 47, "ouverture aux cultures numeriques", "gris"),
+  (0, "MATERA", "Sandro", "M", 38, "graphisme et web design numerique", "noir"),
+  (0, "TSCHAEN", "Benjamin", "M", 29, "reseau systeme", "noir"),
+  (0, "WEISS", "Serge", "M", 55, "anglais", "gris"),
+  (0, "HELMER", "Jean-Luc", "M", 67, "economie et gestion de l''entreprise", "blanc");
+
+  /* Insertion des valeurs de la table administrateurs */
+  INSERT INTO administrators
+  (administrator_id, administrator_lastname, administrator_firstname, administrator_kind,
+  administrator_age, administrator_post, administrator_hair_color)
+  VALUES
+  (0, "GUIRAUD", "Steeve", "M", 21, "assistant commercial", "noir"),
+  (0, "BOOTZ", "Megane", "F", 27, "cheffe de projet pedagogique", "blond"),
+  (0, "TOURON", "Mathilde", "F", 28, "assistante de formation pedagogique", "brun");
