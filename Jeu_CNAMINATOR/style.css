@@ -1,24 +1,218 @@
 @font-face {
-    font-family: "rogfont";
-    src: url('rogfont.TTF');
-    }
-
-body{
-    background: linear-gradient(rgb(61, 168, 255), rgb(61, 70, 197));
-    height: 100vh;
+  font-family: "rogfont";
+  src: url("rogfont.TTF");
 }
 
-.page1 .menu{
+body {
+  background: linear-gradient(rgb(61, 168, 255), rgb(61, 70, 197));
+  background-repeat: no-repeat;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.page1 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page1 h1 {
+  margin: 0;
+  font-family: "rogfont", sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  color: #e42e36;
+  text-shadow: 1px 1px 1px #414142, 1px 2px 1px #414142, 1px 3px 1px #414142,
+    1px 4px 1px #414142, 1px 5px 1px #414142, 1px 6px 1px #414142,
+    1px 7px 1px #000000;
+}
+
+.page1 .bouton {
+  font-size: 30px;
+  display: flex;
+  height: 50px;
+  width: 200px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-bottom: 3px solid #000000;
+  border-left: 3px solid #000000;
+  border-top: 3px solid #000000;
+  border-right: 3px solid #000000;
+  border-radius: 10% / 50%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.page1 .bulle1 {
+  position: absolute;
+  margin-top: 150px;
+  margin-right: 750px;
+  border-radius: 50%;
+}
+
+.page1 .bubble-text {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 10em;
+  width: 300px;
+  height: 90px;
+  padding: 0 1em;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.page1 .bubble-text .bonjour{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+
+.page1 .bubble-text::after {
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffffff;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -12px;
+}
+
+.page1 .bulle2 {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 750px;
+}
+
+.page1 .bubble-text2 {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2px 10px;
+  border-radius: 10em;
+  width: 15em;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.page1 .bubble-text2::after {
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffffff;
+  position: absolute;
+  margin-left: -80px;
+}
+
+/* Page 2 */
+.page2 .retour {
+  font-family: "rogfont", sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: #e42e36;
+  text-shadow: 1px 1px 1px #414142, 1px 2px 1px #414142, 1px 3px 1px #414142,
+    1px 4px 1px #414142, 1px 5px 1px #414142, 1px 6px 1px #414142,
+    1px 7px 1px #000000;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.page2 .image {
+  display: flex;
+  justify-content: center;
+}
+
+.page2 .bubble-text p{
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 1.5em;
+  padding: 1em;
+  border-radius: 10px;
+  width: 15em;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+}
+
+/* .page2 .bubble-text::after{
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffffff;
+  font-weight: bold;
+  position: absolute;
+} */
+
+.page2 .menu {
+  font-size: 30px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.page2 .menu .bouton {
+  text-decoration: none;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+}
+
+.page2 ul li {
+  /* margin: 1em; */
+}
+
+.page2 li {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  padding: 1em;
+}
+
+.page3 .menu{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 35px;
 }
 
+.page3 .bulle2{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 950px;
+}
 
-.page1 h1{
+.page3 .bubble-text2{
+
+    background:#ffffff;
+    color:rgb(0, 0, 0);
+    padding:2px 10px;
+    border-radius: 10%;
+    width:300px;
+    font-size: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    height: 500px;
+    width: 500px;
+
+}
+
+.page3 .bubble-text2::after{
+    content:"";
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    border-top: 20px solid #ffffff;
+    position: absolute;
+    margin-left: -110px;
+}
+
+ .page3 h1{
     margin: 0;
     font-family: "rogfont", sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     letter-spacing: 10px;
     color: #e42e36;
     text-shadow:
@@ -29,24 +223,13 @@ body{
         1px 5px 1px #414142,
         1px 6px 1px #414142,
         1px 7px 1px #000000;
-
 }
 
-.page1 .image{
-    margin-top: 10px;
-}
-
-
-
-.page1 .bouton1{
-    margin-top: 50px;
-}
-
-.page1 .bouton {
+.page3 .bouton {
     font-size: 30px;
     display: flex;
     height: 50px;
-    width: 200px;
+    width: 500px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
@@ -54,152 +237,14 @@ body{
     border-left: 3px solid #000000;
     border-top: 3px solid #000000;
     border-right: 3px solid #000000;
-    border-radius: 10% / 50%;
+    border-radius: 5% / 50%;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-
+    margin-left: 960px;
+    margin-top: 20px;
 }
 
-.page1 .bulle1{
-    position: absolute;
-    margin-top: 150px;
-    margin-right: 750px;
-    border-radius: 50%;
-}
-
-.page1 .bubble-text{
-
-    background:#ffffff;
-    color:rgb(0, 0, 0);
-    border-radius: 10% / 50%;
-    width:300px;
-    height: 100px;
-    text-align: center;
-    font-size: 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-
-}
-
-.page1 .bubble-text h2{
-   margin-bottom: 0;
-
-}
-
-.page1 .bubble-text::after{
-    content:"";
-    border-left:20px solid transparent;
-    border-right:20px solid transparent;
-    border-top: 20px solid #ffffff;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: -20px;
- }
-
-.page1 .bulle2{
-    position: absolute;
-    margin-top: 150px;
-    margin-left: 750px;
-}
-
-.page1 .bubble-text2{
-
-    background:#ffffff;
-    color:rgb(0, 0, 0);
-    padding:2px 10px;
-    border-radius: 10% / 50%;
-    width:300px;
-    font-size: 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-.page1 .bubble-text2::after{
-    content:"";
-    border-left:20px solid transparent;
-    border-right:20px solid transparent;
-    border-top: 20px solid #ffffff;
-    position: absolute;
-    margin-left: 50px;
- }
-
-
-.page2 .retour{
-    font-family: "rogfont", sans-serif;
-    font-size: 30px;
-    letter-spacing: 5px;
-    color: #e42e36;
-    text-shadow:
-        1px 1px 1px #414142,
-        1px 2px 1px #414142,
-        1px 3px 1px #414142,
-        1px 4px 1px #414142,
-        1px 5px 1px #414142,
-        1px 6px 1px #414142,
-        1px 7px 1px #000000;
-    margin-left: 30px;
-    text-decoration: none;
-}
-
-.page2 .bulle1{
-    position: absolute;
-    margin-left: 900px;
-    margin-top: 150px;
-}
-
-.page2 .bubble-text{
-
-    background:#ffffff;
-    color:rgb(0, 0, 0);
-    padding:2px 10px;
-    border-radius:3px;
-    width:300px;
-    font-size: 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    font-weight: bold;
-
-}
-.page2 .bubble-text::after{
-    content:"";
-    border-left:20px solid transparent;
-    border-right:20px solid transparent;
-    border-top: 20px solid #ffffff;
-    position: absolute;
- }
-
-
-
- .page2 .image {
-  display: flex;
-  justify-content: center;
-}
-
-.page2 .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 30px;
-  list-style: none;
-  text-decoration: none;
-  margin-left: 15%;
-  margin-top: -18%;
-}
-
-.page2 .bouton {
-  text-decoration: none;
-  color: #000000;
-  background-color: rgb(255, 255, 255);
-}
-
-ul li {
-  margin: 1%;
-}
-
-li {
-  background-color: rgb(255, 255, 255);
-  border-radius: 10%;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 2%;
-  height: 30px;
-  width: 180px;
-  text-align: center;
+.page3 img{
+    margin-left: 400px;
 }
