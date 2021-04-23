@@ -102,7 +102,6 @@ INSERT INTO auditors
 VALUES
   (0, "FLAMENT", "Pauline", "F", 23, "lecture", "roux", "vert"),
   (0, "GLOUX", "Ethan", "M", 18, "gaming", "brun", "brun"),
-  (0, "GRANJON", "Lea", "F", 20, "gaming", "brun", "brun"),
   (0, "LECORNET", "Julien", "M", 20, "gagner de l''argent", "blond", "bleu"),
   (0, "MANSO", "Melanie", "F", 24, "regarder des series", "brun", "bleu"),
   (0, "NOVO", "Sandra", "M", 29, "handlettering", "noir", "brun"),
@@ -118,14 +117,11 @@ VALUES
   (0, "DI MASCOLO", "Claudine", "F", 45, "methodes et outils communication ecrite", "rouge"),
   (0, "CHARIH", "Khalil", "M", 39, "php-mvc", "brun"),
   (0, "DEVOLDERE", "Mickael", "M", 40, "base de donnees", "brun"),
-  (0, "EDEBAU", "Marjorie", "F", 45, "coaching personnalise", "brun"),
   (0, "BASTIAN", "Celia", "F", 45, "coaching personnalise", "blond"),
-  (0, "GOZE", "Michel", "M", 60, "outils mathematiques", "blanc"),
   (0, "SCHOTT", "Jean-Louis", "M", 64, "demarche de projet", "blanc"),
   (0, "PINTIAU", "Frederic", "M", 47, "ouverture aux cultures numeriques", "gris"),
   (0, "MATERA", "Sandro", "M", 38, "graphisme et web design numerique", "noir"),
   (0, "TSCHAEN", "Benjamin", "M", 29, "reseau systeme", "noir"),
-  (0, "WEISS", "Serge", "M", 55, "anglais", "gris"),
   (0, "HELMER", "Jean-Luc", "M", 67, "economie et gestion de l''entreprise", "blanc");
 
   /* Insertion des valeurs de la table administrateurs */
@@ -136,3 +132,66 @@ VALUES
   (0, "GUIRAUD", "Steeve", "M", 21, "assistant commercial", "noir"),
   (0, "BOOTZ", "Megane", "F", 27, "cheffe de projet pedagogique", "blond"),
   (0, "TOURON", "Mathilde", "F", 28, "assistante de formation pedagogique", "brun");
+
+  /* Insertion des valeurs de la table questions */
+  INSERT INTO questions
+  (question_id, question_type, question_description)
+  VALUES
+  (0, "kind", "Est-ce que la personne est une femme ?"),
+  (0, "kind", "Est-ce que la personne est un homme ?"),
+  (0, "age", "Est-ce que la personne a moins de 20 ans ?"),
+  (0, "age", "Est-ce que la personne a plus de 20 ans ?"),
+  (0, "age", "Est-ce que la personne a moins de 30 ans ?"),
+  (0, "age", "Est-ce que la personne a plus de 30 ans ?"),
+  (0, "age", "Est-ce que la personne a moins de 40 ans ?"),
+  (0, "age", "Est-ce que la personne a plus de 40 ans ?"),
+  (0, "age", "Est-ce que la personne a moins de 50 ans ?"),
+  (0, "age", "Est-ce que la personne a plus de 50 ans ?"),
+  (0, "age", "Est-ce que la personne a moins de 60 ans ?"),
+  (0, "age", "Est-ce que la personne a plus de 60 ans ?"),
+  (0, "role", "Est-ce que la personne est un intervenant au CNAM ?"),
+  (0, "role", "Est-ce que la personne est un auditeur au CNAM ?"),
+  (0, "role", "Est-ce que la personne fait partie de l''administration du CNAM ?"),
+  (0, "hair color", "Est-ce que la personne a les cheveux blonds ?"),
+  (0, "hair color", "Est-ce que la personne a les cheveux bruns ?"),
+  (0, "hair color", "Est-ce que la personne a les cheveux roux ?"),
+  (0, "hair color", "Est-ce que la personne a les cheveux noirs ?"),
+  (0, "hair color", "Est-ce que la personne a les cheveux châtains ?"),
+  (0, "hair color", "Est-ce que la personne a les cheveux gris ?"),
+  (0, "hair color", "Est-ce que la personne a les cheveux blancs ?"),
+  (0, "eyes color", "Est-ce que la personne a les yeux bleus ?"),
+  (0, "eyes color", "Est-ce que la personne a les yeux verts ?"),
+  (0, "eyes color", "Est-ce que la personne a les yeux bruns ?"),
+  (0, "alternation", "Est-ce que la personne a trouvé facilement une alternance ?"),
+  (0, "passion", "Est-ce que la personne a pour passion les jeux vidéo ?"),
+  (0, "passion", "Est-ce que la personne a pour passion la lecture ?"),
+  (0, "passion", "Est-ce que la personne a pour passion les séries ?"),
+  (0, "passion", "Est-ce que la personne a pour passion les Handlettering ?"),
+  (0, "passion", "Est-ce que la personne a pour passion faire de l''argent ?"),
+  (0, "passion", "Est-ce que la personne a pour passion faire la fête ?");
+
+  /* Insertion des valeurs de la table réponses */
+  INSERT INTO responses
+  (response_id, response_type, response_description)
+  VALUES
+  (0, "auditors", "La personne à laquelle je pense est-elle Pauline FLAMENT ?"),
+  (0, "auditors", "La personne à laquelle je pense est-elle Mélanie MANSO ?"),
+  (0, "auditors", "La personne à laquelle je pense est-elle Sandra NOVO ?"),
+  (0, "auditors", "La personne à laquelle je pense est-elle Ethan GLOUX ?"),
+  (0, "auditors", "La personne à laquelle je pense est-elle Dorian PATRU ?"),
+  (0, "auditors", "La personne à laquelle je pense est-elle Romain TESTE ?"),
+  (0, "auditors", "La personne à laquelle je pense est-elle Julien LECORNET ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Jean-Louis SCHOTT ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Benoit MAIGRET ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Claudine DI MASCOLO ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Khalil CHARIH ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Mickael DEVOLDERE ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Celia BASTIAN ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Jean-Louis SCHOTT ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Frédéric PINTIAU ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Sandro MATERA ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Benjamin TSCHAEN ?"),
+  (0, "speakers", "La personne à laquelle je pense est-elle Jean-Luc HELMER ?"),
+  (0, "administrators", "La personne à laquelle je pense est-elle Steeve GUIRAUD ?"),
+  (0, "administrators", "La personne à laquelle je pense est-elle Mégane BOOTZ ?"),
+  (0, "administrators", "La personne à laquelle je pense est-elle Mathilde TOURON ?");
