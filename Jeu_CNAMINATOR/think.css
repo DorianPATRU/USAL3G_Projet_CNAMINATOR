@@ -13,6 +13,10 @@ body {
     overflow-y: hidden;
 }
 
+.page4 .image img{
+  height: 35em;
+}
+
 .page4 .retour {
     font-family: "rogfont", sans-serif;
     font-size: 30px;
